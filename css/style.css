@@ -1,0 +1,469 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: HorBlack;
+  src: url(../font/HarmoniaSansProCyr-Black.otf);
+}
+
+@font-face {
+  font-family: HorReg;
+  src: url(../font/HarmoniaSansProCyr-Regular.otf);
+}
+
+@font-face {
+  font-family: HorSemiBd;
+  src: url(../font/HarmoniaSansProCyr-SemiBd.otf);
+}
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.line {
+  color: rgba(230, 232, 235, 0.5);
+}
+
+.header {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header__mail_text {
+  font-family: HorReg;
+  text-decoration: none;
+  color: #34404b;
+  margin-left: 8px;
+}
+
+.header .header__number {
+  margin-left: 20px;
+}
+
+.header .header__number_text {
+  font-family: HorReg;
+  text-decoration: none;
+  color: #34404b;
+  margin-left: 8px;
+}
+
+.header .header__social_link {
+  padding: 0px 5px 0px 5px;
+  display: inline-block;
+}
+
+.headline {
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headline .headline--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.headline .headline--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.headline .headline__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10%;
+}
+
+.headline .headline__menu_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 20px 0px 20px;
+}
+
+.headline .headline__menu_link a {
+  color: #34404b;
+  text-decoration: none;
+  font-family: HorReg;
+}
+
+.headline .headline__menu_link a:hover {
+  color: #ff5912;
+}
+
+.headline .headline__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.headline .headline__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headline .headline__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headline .headline__cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headline .headline__box img {
+  padding: 0px 10px 0px 10px;
+}
+
+.headline .headline__cart {
+  position: relative;
+}
+
+.headline .headline__cart_massage {
+  top: -8px;
+  left: 28%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #34404b;
+  margin: 0 auto;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 11px;
+  font-family: HorReg;
+}
+
+.product {
+  height: 450px;
+}
+
+.product .product--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 120px;
+}
+
+.product .product--left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.product .product--right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-left: 5%;
+}
+
+.product .product__title {
+  color: #ff5912;
+  font-size: 44px;
+  font-family: HorBlack;
+}
+
+.product .product__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product .product__small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.product .product__small_wrap {
+  width: 120px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 15px;
+  background-color: #f4f6f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  cursor: pointer;
+}
+
+.product .product__small_wrap:hover {
+  background-color: #ff5912;
+}
+
+.product .product__name {
+  font-family: HorSemiBd;
+  color: #3c4751;
+  margin-top: 10px;
+}
+
+.product .product__desr {
+  width: 70%;
+  color: #495662;
+  font-family: HorReg;
+  margin-top: 20px;
+}
+
+.product .product__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+  max-width: 550px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid rgba(230, 232, 235, 0.5);
+  border-bottom: 1px solid rgba(230, 232, 235, 0.5);
+}
+
+.product .product__count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product .product__size_choos {
+  font-family: HorSemiBd;
+  color: #34404b;
+}
+
+.product .product__size_name {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  padding: 5px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  display: inline-block;
+  cursor: pointer;
+  font-family: HorSemiBd;
+  color: #34404b;
+}
+
+.product .product__size_name:hover {
+  color: #ff5912;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.product .product__count_text {
+  font-family: HorSemiBd;
+  color: #34404b;
+}
+
+.product .product__count_plus {
+  font-family: HorSemiBd;
+  color: #34404b;
+  padding: 0px 5px 0px 5px;
+}
+
+.product .product__count_number {
+  color: #ff5912;
+}
+
+.product .product__count_minus {
+  font-family: HorSemiBd;
+  color: #34404b;
+  padding: 0px 5px 0px 5px;
+}
+
+.product .product__cart {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 550px;
+}
+
+.product .product__price__text {
+  font-family: HorBlack;
+  color: #34404b;
+}
+
+.product .product__order_btn {
+  padding: 10px 20px 10px 20px;
+  border: none;
+  outline: none;
+  background-color: #ff5912;
+  border-radius: 20px;
+  font-family: HorSemiBd;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.product .product__order_img {
+  padding: 0px 10px 0px 10px;
+}
+
+.product .product__order_btn:hover {
+  background-color: #A52A2A;
+}
+
+.menu-wrapper {
+  width: 30px;
+  height: 15px;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: 30px;
+  height: 3px;
+}
+
+.hamburger-menu {
+  position: relative;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  background: #000;
+  -webkit-transition: all 0ms 300ms;
+  transition: all 0ms 300ms;
+}
+
+.hamburger-menu.animate {
+  background: rgba(255, 255, 255, 0);
+}
+
+.hamburger-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+  background: #000;
+  -webkit-transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  background: #000;
+  -webkit-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:after {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:before {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+/*# sourceMappingURL=style.css.map */

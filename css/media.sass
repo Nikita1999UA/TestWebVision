@@ -1,0 +1,66 @@
+@media screen and (max-width: 1100px)
+    body 
+        padding: 15px
+        font-size: 12px
+    .product
+        & .product__order_btn
+            padding: 5px 10px 5px 10px
+
+@media screen and (max-width: 768px)
+    .header--container
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    .header__social
+        margin-top: 10px
+    .product
+        & .product--container
+            flex-direction: column
+            margin-top: 50px    
+        & .product__desr
+            text-align: center
+        & .product--right
+            margin: 0 auto
+            justify-content: center
+            align-items: center
+            display: flex
+            flex-direction: column
+        & .product__order_btn
+            padding: 10px 20px 10px 20px
+    .headline__logo
+        order: 2
+        margin: 0 auto
+    .headline--left
+        align-items: center
+    .headline__menu 
+        opacity: 0
+        left: 15px !important
+        position: fixed
+        transition: all .4s
+        z-index: 101
+        height: auto
+        background-color: #ff5912
+        padding: 15px   
+        color: #fff
+    .headline__menu.active 
+        left: 0
+        opacity: 1
+    .menu-wrapper 
+        display: block  
+
+    ul 
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    
+
+@media screen and (max-width: 500px)
+    .product__title
+        font-size: 36px !important
+    .product__order
+        display: flex
+        justify-content: flex-end
+        align-items: center
+    .product__order_btn
+        font-size: 10px

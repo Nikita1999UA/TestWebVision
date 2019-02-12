@@ -1,0 +1,258 @@
+*
+    padding: 0
+    margin: 0
+@font-face 
+  font-family: HorBlack
+  src: url(../font/HarmoniaSansProCyr-Black.otf)
+@font-face 
+  font-family: HorReg
+  src: url(../font/HarmoniaSansProCyr-Regular.otf)
+@font-face 
+  font-family: HorSemiBd
+  src: url(../font/HarmoniaSansProCyr-SemiBd.otf)
+  
+$colorGray: #34404b
+$colorOrange: #ff5912
+
+
+.wrapper
+    max-width: 1100px
+    width: 100%
+    margin:  0 auto
+.line
+    color: rgba(230, 232, 235, 0.5)
+.header
+    height: 60px
+    display: flex
+    align-items: center
+    & .header--container
+        display: flex
+        justify-content: space-between
+    & .header__contact
+        display: flex
+    & .header__mail_text
+        font-family: HorReg
+        text-decoration: none
+        color: $colorGray
+        margin-left: 8px
+    & .header__number
+        margin-left: 20px
+    & .header__number_text
+        font-family: HorReg
+        text-decoration: none
+        color: $colorGray
+        margin-left: 8px
+    & .header__social_link
+        padding: 0px 5px 0px 5px
+        display: inline-block
+
+.headline
+    height: 120px
+    display: flex
+    align-items: center
+    & .headline--container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    & .headline--left
+        display: flex
+        flex: 1 1 auto
+    & .headline__menu
+        display: flex
+        margin-left: 10%
+    & .headline__menu_link
+        display: flex
+        list-style: none
+        align-items: center
+        padding:  0px 20px 0px 20px
+        a 
+            color: $colorGray
+            text-decoration: none
+            font-family: HorReg
+        a:hover 
+            color: $colorOrange
+    & .headline__box
+        display: flex
+    & .headline__search
+        display: flex
+        align-items: center
+    & .headline__user
+        display: flex
+        align-items: center
+    & .headline__cart
+        display: flex
+        align-items: center
+    & .headline__box img
+        padding: 0px 10px 0px 10px
+    & .headline__cart
+        position: relative
+    & .headline__cart_massage
+        top: -8px
+        left: 28%
+        position: absolute
+        width: 20px
+        height: 20px
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: $colorGray
+        margin: 0 auto
+        border-radius: 50%
+        color: #fff
+        font-size: 11px
+        font-family: HorReg
+
+.product
+    height: 450px
+    & .product--container
+        display: flex
+        margin-top: 120px
+    & .product--left
+        flex: 1 1 auto
+    & .product--right
+        flex: 1 1 auto
+        margin-left: 5%
+    & .product__title
+        color: $colorOrange
+        font-size: 44px
+        font-family: HorBlack
+    & .product__main
+        display: flex
+        justify-content: center
+    & .product__small
+        display: flex
+        justify-content: center
+        margin-top: 50px
+    & .product__small_wrap
+        width: 120px
+        padding-top: 10px
+        padding-bottom: 10px    
+        margin-left: 15px
+        background-color: #f4f6f8
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: 250ms
+        cursor: pointer
+    & .product__small_wrap:hover
+        background-color: $colorOrange
+    & .product__name
+        font-family: HorSemiBd
+        color: #3c4751
+        margin-top: 10px
+    & .product__desr
+        width: 70%
+        color: #495662
+        font-family: HorReg
+        margin-top: 20px
+    & .product__options
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 40px
+        max-width: 550px
+        padding-top: 30px
+        padding-bottom: 30px
+        border-top: 1px solid rgba(230, 232, 235, 0.5)
+        border-bottom: 1px solid rgba(230, 232, 235, 0.5)
+    & .product__count
+        display: flex
+        align-items: center
+    & .product__size_choos
+        font-family: HorSemiBd
+        color: $colorGray
+    & .product__size_name
+        transition: 250ms
+        padding: 5px
+        transform: scale(1)
+        display: inline-block
+        cursor: pointer
+        font-family: HorSemiBd
+        color: $colorGray
+    & .product__size_name:hover
+        color: $colorOrange
+        transform: scale(1.5)
+    & .product__count_text
+        font-family: HorSemiBd
+        color: $colorGray
+    & .product__count_plus
+        font-family: HorSemiBd
+        color: $colorGray
+        padding: 0px 5px 0px 5px
+    & .product__count_number
+        color: $colorOrange
+    & .product__count_minus
+        font-family: HorSemiBd
+        color: $colorGray
+        padding: 0px 5px 0px 5px
+    & .product__cart
+        height: 100px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        max-width: 550px
+    & .product__price__text
+        font-family: HorBlack
+        color: $colorGray
+    & .product__order_btn
+        padding: 10px 20px 10px 20px
+        border: none
+        outline: none
+        background-color: $colorOrange
+        border-radius: 20px
+        font-family: HorSemiBd
+        color: #fff
+        font-size: 16px
+        cursor: pointer
+    & .product__order_img
+        padding: 0px 10px 0px 10px
+    & .product__order_btn:hover
+        background-color:#A52A2A	
+.menu-wrapper
+    width: 30px
+    height: 15px
+    cursor: pointer
+    display: none
+
+
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before 
+    width: 30px
+    height: 3px
+
+
+.hamburger-menu 
+    position: relative
+    transform: translateY(6px)
+    background: #000
+    transition: all 0ms 300ms
+
+.hamburger-menu.animate 
+    background: rgba(255, 255, 255, 0)
+
+.hamburger-menu:before 
+    content: ""
+    position: absolute
+    left: 0
+    bottom: 6px
+    background: #000
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1)
+
+.hamburger-menu:after 
+    content: ""
+    position: absolute
+    left: 0
+    top: 6px
+    background: #000
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1)
+
+.hamburger-menu.animate:after 
+    top: 0
+    transform: rotate(45deg)
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1)
+
+.hamburger-menu.animate:before 
+    bottom: 0
+    transform: rotate(-45deg)
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1)
